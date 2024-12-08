@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset */
+
+@font-face {
+	font-family: 'Work Sans', sans-serif;
+	src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+	font-weight: 100 900;
+}
+
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-image: url(./assets/images/background-pattern-mobile.svg);
+	background-repeat: no-repeat;
+	background-color: #f6edfe;
+	background-size: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+	font-family: 'Work Sans', sans-serif;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 100vw;
+}
+
+.faqsSection {
+	background-color: #ffffff;
+	padding: 0.5rem;
+	margin: 2rem;
+	border-radius: 0.5rem;
+	max-width: 600px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.faqsSection__header {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.faqsSection__header img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.faqsSection__header h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: hsl(292, 42%, 14%);
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	list-style: none;
+}
+
+li {
+	border-bottom: solid 2px #f6edfe;
+	padding: 1rem;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	min-width: 100%;
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 600;
+	color: hsl(292, 42%, 14%);
+}
+
+.disclosureContent {
+	display: none;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: hsl(292, 16%, 49%);
+	text-align: left;
+	max-width: 100%;
+	padding: 0.25rem;
+	line-height: 150%;
+}
+
+@media (min-width: 768px) {
+	body {
+		background-image: url(./assets/images/background-pattern-desktop.svg);
+	}
+}
